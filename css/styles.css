@@ -241,7 +241,7 @@ a {
   letter-spacing: 0.06em;
   cursor: pointer;
   margin: auto;
-  padding: 0px 32px;
+  padding: 10px 32px;
   /* box-sizing: border-box;
   width: 200px;
   height: 50px; */
@@ -255,7 +255,8 @@ a {
   /* outline: 2px solid red; */
   display: flex;
   justify-content: center;
-  padding: 25px 100px;
+  align-items: center;
+  /* padding: 25px 100px; */
   /* margin-bottom: 30px; */
 }
 .section-accent {
@@ -353,20 +354,9 @@ a {
   padding-right: 15px;
 }
 
-/* {color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    box-sizing: border-box;
-    outline: 2px solid red;}  */
-
-/* padding-top: 94px;
-  padding-bottom: 94px;  */
-/* .team {
-  margin-bottom: 94px;
-  width: var(--box-sizing);
+/* .team-vizitka {
+  display: flex;
+  flex-direction: row;
 } */
 
 .section-team-title {
@@ -390,12 +380,16 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .blok-name {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: center;
   gap: 10px;
 }
 .team-title {
@@ -413,6 +407,7 @@ a {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .team-list {
@@ -423,7 +418,7 @@ a {
   gap: 30px;
   padding: 0px;
 }
-.social {
+/* .social {
   display: flex;
   flex-direction: column;
   /* width: 270px; */
@@ -432,41 +427,61 @@ a {
   align-content: center;
   justify-content: space-around;
   margin: auto;
-  /* outline: 2px solid red; */
 }
+
+
 .social-cart {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: flex;
+  /* display: block;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding: 0;
   margin: 0;
   fill: var(--primary-text-color);
   /* outline: 2px solid red; */
-}
+} */
 
-.icon-social {
+/* .icon-social {
   width: 20px;
   height: 20px;
-}
+} */
 
-.social :hover .social-cart,
-.social :hover {
-  background-color: var(--accent-text-color);
-  fill: #ffffff;
-}
+
+
 /* .social :focus .social-cart,
 .social :focus {
   background-color: var(--accent-text-color);
   fill: #ffffff;
 } */
+.item-team{
+    display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 .social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill:var(--primary-text-color);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+justify-content: center;
+align-items: center;
+}
+
+.social-link:hover,
+.social-link:focus{
+  background-color: var(--accent-text-color);
+  fill:#ffffff
 }
 
 /* ===============================KLIENT======================= */
@@ -521,14 +536,21 @@ border-radius: 4px; */
   fill: #afb1b8;
 }
 
-.linkpo :hover,
-.linkpo :hover .icon-klient {
+.icon-team {
+  flex: var(--primary-text-color);
+}
+
+
+
+.card-company:hover,
+.linkpo:hover,
+.linkpo:hover .icon-klient {
   border-color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
-
-.linkpo :focus,
-.linkpo :focus .icon-klient {
+.card-company:focus,
+.linkpo:focus,
+.linkpo:focus .icon-klient {
   border-color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
@@ -550,11 +572,16 @@ border-radius: 4px; */
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: baseline;
   gap: 70px;
 }
 
+.footer-social-list {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
 .section-footer {
   background-color: #2f303a;
 }
@@ -613,32 +640,21 @@ border-radius: 4px; */
   margin-bottom: 20px;
 }
 
-.footer-social-blok {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-direction: row; */
-}
-
-.foot-link {
+.social-link-footer{
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
-  /* outline: 2px solid red; */
 }
 
-.footer-social-blok :hover,
-.footer-social-blok :focus {
+.footer-social-list :hover,
+.footer-social-list :focus {
   background-color: var(--accent-text-color);
+  border-radius: 50%;
 }
 
 /* =======================================Portfolio========================================= */
