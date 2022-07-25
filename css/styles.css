@@ -179,16 +179,19 @@ a {
   border: 0;
   margin-right: 10px;
   fill: var(--primary-text-color);
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 /*========= hero ===========*/
 
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4);
-  background-image: url(../image/hero.jpeg);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/hero.jpeg);
   max-width: 1600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   margin: auto;
 }
 
@@ -335,7 +338,7 @@ a {
   width: var(--box-sizing);
 }
 
-/* ================Team============== */
+/* ==============================Team============== */
 
 .section-title-team {
   padding-top: 94px;
@@ -677,6 +680,8 @@ border-radius: 4px; */
 .filter-button:focus {
   background-color: var(--accent-text-color);
   color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-filter {
@@ -714,8 +719,8 @@ border-radius: 4px; */
   flex-direction: column;
 }
 
-.card-work :hover,
-.card-work :focus {
+.card-work:hover,
+.card-work:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
