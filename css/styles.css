@@ -343,7 +343,7 @@ a {
 
 .section-title-team {
   padding-top: 94px;
-  background: #ececec;
+  background: #F5F4FA;
   padding-bottom: 94px;
 }
 
@@ -434,9 +434,6 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* display: block;
-  justify-content: center;
-  align-items: center; */
   padding: 0;
   margin: 0;
   fill: var(--primary-text-color);
@@ -472,7 +469,7 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill:var(--primary-text-color);
+  fill: #AFB1B8;
   display: flex;
 justify-content: center;
 align-items: center;
